@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Банда sonora — Предчувствие</title>
+<meta name="description" content="Отдельная музыкальная страница романа «Предчувствие»: плейлист, визуальный плеер и атмосферный аудиоспектр."/>
+<link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body class="soundtrack-page">
+<header class="site">
+  <div class="container navbar">
+    <a class="brand" href="index.html"><strong>Предчувствие</strong><span>Роман Роберта Фадера</span></a>
+    <nav class="navlinks">
+      <a href="index.html#chapters">Главы</a>
+      <a href="characters.html">Персонажи</a>
+      <a href="author.html">Об авторе</a>
+      <a class="soundtrack-link" href="soundtrack.html">Банда sonora</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="soundtrack-hero">
+    <div class="container soundtrack-grid">
+      <section class="soundtrack-visual">
+        <img id="soundtrack-cover" class="soundtrack-cover" src="assets/images/cover.jpg" alt="Обложка саундтрека"/>
+        <div class="spectrum-wrap"><canvas id="spectrum"></canvas></div>
+        <div class="soundtrack-overlay">
+          <div id="visual-chip" class="nowplaying-chip"><span class="eq-dot"></span><span>Саундтрек романа</span></div>
+          <h1 id="visual-title">Романтический хаос</h1>
+          <p id="visual-text">Музыка для чтения романа: внутреннее напряжение, любовь, катастрофа и надежда.</p>
+        </div>
+      </section>
+      <section class="soundtrack-panel">
+        <div class="player-top">
+          <div>
+            <span class="kicker">Новая страница сайта</span>
+            <h2>Банда sonora романа</h2>
+            <p>Отдельный плейлист, созданный как музыкальная дверь в атмосферу «Предчувствия».</p>
+          </div>
+          <div class="player-art-mini"><img id="mini-cover" src="assets/images/cover.jpg" alt="Мини-обложка текущего трека"/></div>
+        </div>
+        <div class="track-meta">
+          <small>Сейчас звучит</small>
+          <div id="now-title" class="track-title">Романтический хаос</div>
+          <div id="now-subtitle" class="track-subtitle">Музыка для чтения романа: внутреннее напряжение, любовь, катастрофа и надежда.</div>
+          <div class="audio-shell">
+            <div class="progress-row">
+              <div id="current-time" class="time-label">0:00</div>
+              <div id="progress" class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+              <div id="duration-time" class="time-label">0:00</div>
+            </div>
+            <div class="controls">
+              <button id="prev-track" class="control-btn" type="button">⟵</button>
+              <button id="play-toggle" class="control-btn primary" type="button">▶ Слушать</button>
+              <button id="next-track" class="control-btn" type="button">⟶</button>
+            </div>
+            <audio id="novel-audio" preload="metadata"></audio>
+          </div>
+        </div>
+        <div id="playlist" class="playlist" aria-label="Список песен"></div>
+      </section>
+    </div>
+  </section>
+
+  <section class="soundtrack-bottom">
+    <div class="container soundtrack-cards">
+      <div class="soundtrack-feature">
+        <h3>Зачем эта страница</h3>
+        <p>Чтобы музыка работала как продолжение романа: помогала читать, усиливала сцены и создавала ощущение отдельного художественного мира.</p>
+      </div>
+      <div class="soundtrack-feature">
+        <h3>Как слушать</h3>
+        <p>Можно выбирать треки вручную, возвращаться к ним после чтения и использовать плейлист как сопровождение к главам или к отдельным персонажам.</p>
+      </div>
+      <div class="soundtrack-note">
+        <p><strong>Связь с романом.</strong> Визуальные образы, песни и плейлист собраны так, чтобы вдохновлять на чтение и поддерживать тон «Предчувствия» — от тревоги и катастрофы до близости и надежды.</p>
+        <p><a class="button primary" href="index.html">Вернуться к роману</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="container">Музыкальная страница интегрирована в общий сайт романа и работает офлайн.</div></footer>
+<script src="assets/soundtrack.js"></script>
+</body>
+</html>
